@@ -2,7 +2,7 @@
 import { getObserver, hiddenTime, getScore } from './utils'
 import { logIndicator } from './log'
 import ttiPolyfill  from 'tti-polyfill'
-let tbt = 0
+let tbt = 0  // Total Blocking Time
 
 /**
  * @description 获取页面加载相关信息
@@ -202,7 +202,7 @@ export const getLongTask = (fcp:number) => {
 }
 
 /**
- * @description 获取首次可交互时间
+ * @description 获取首次可交互时间 Time to Interactive
 */
 export const getTTI = () =>{
     // 统计方式：谷歌实验室写的npm包，tti-polyfill
